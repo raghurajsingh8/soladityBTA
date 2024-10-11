@@ -11,3 +11,331 @@ _____________________________LECTURE_2_____PRER  EQUISITES______________________
 BLOCKCHAIN
 ETHEREUM
 ANY PROG LANG
+___________________________LECTURE_3__REMIX_IDE_________________ONLINE________
+remix ide pr extension .sol 
+step 1 licesnce
+step 2 pregma and version 
+
+code ke baaad compiler me compile krenge
+enviornement gas limit deploy
+
+
+this is open source ide 
+it can--------->deploy + deploy  + administer
+
+language suppurrt soladity and vyper
+written in JAVASCRIPT 
+
+MODULES TSTING DEBUGGING DEPLOY
+
+__________________________LECTURE_4__SAMRT__CONTRACT__COMPILATION_____________
+
+Contractsource.sol file
+      |
+soladity_compiler 
+  |            |
+abi          bytecode
+
+ABI abstract binary interface  use if any other smart contract want to communicate with this smart contract
+
+byte code deploy on etherium blockchain not all smart contract 
+
+
+
+
+bytecode
+
+6080604052348015600e575f80fd5b506101438061001c5f395ff3fe608060405234801561000f575f80fd5b5060043610610034575f3560e01c80632e64cec1146100385780636057361d14610056575b5f80fd5b610040610072565b60405161004d919061009b565b60405180910390f35b610070600480360381019061006b91906100e2565b61007a565b005b5f8054905090565b805f8190555050565b5f819050919050565b61009581610083565b82525050565b5f6020820190506100ae5f83018461008c565b92915050565b5f80fd5b6100c181610083565b81146100cb575f80fd5b50565b5f813590506100dc816100b8565b92915050565b5f602082840312156100f7576100f66100b4565b5b5f610104848285016100ce565b9150509291505056fea26469706673582212209a0dd35336aff1eb3eeb11db76aa60a1427a12c1b92f945ea8c8d1dfa337cf2264736f6c634300081a0033
+
+abi
+
+[
+	{
+		"inputs": [],
+		"name": "retrieve",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "num",
+				"type": "uint256"
+			}
+		],
+		"name": "store",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
+
+_________________________________________________________
+abi ke through hi hm communivate krte hai its in json formet 
+
+__________________________________________________________
+bytecode to opcode
+
+[0] PUSH1 0x80
+[1] PUSH1 0x40
+[2] MSTORE
+[3] CALLVALUE
+[4] DUP1
+[5] ISZERO
+[6] PUSH1 0x0e
+[7] JUMPI
+[8] PUSH0 0x
+[9] DUP1
+[10] REVERT
+[11] JUMPDEST
+[12] POP
+[13] PUSH2 0x0143
+[14] DUP1
+[15] PUSH2 0x001c
+[16] PUSH0 0x
+[17] CODECOPY
+[18] PUSH0 0x
+[19] RETURN
+[20] 'fe'(Unknown Opcode)
+[21] PUSH1 0x80
+[22] PUSH1 0x40
+[23] MSTORE
+[24] CALLVALUE
+[25] DUP1
+[26] ISZERO
+[27] PUSH2 0x000f
+[28] JUMPI
+[29] PUSH0 0x
+[30] DUP1
+[31] REVERT
+[32] JUMPDEST
+[33] POP
+[34] PUSH1 0x04
+[35] CALLDATASIZE
+[36] LT
+[37] PUSH2 0x0034
+[38] JUMPI
+[39] PUSH0 0x
+[40] CALLDATALOAD
+[41] PUSH1 0xe0
+[42] SHR
+[43] DUP1
+[44] PUSH4 0x2e64cec1
+[45] EQ
+[46] PUSH2 0x0038
+[47] JUMPI
+[48] DUP1
+[49] PUSH4 0x6057361d
+[50] EQ
+[51] PUSH2 0x0056
+[52] JUMPI
+[53] JUMPDEST
+[54] PUSH0 0x
+[55] DUP1
+[56] REVERT
+[57] JUMPDEST
+[58] PUSH2 0x0040
+[59] PUSH2 0x0072
+[60] JUMP
+[61] JUMPDEST
+[62] PUSH1 0x40
+[63] MLOAD
+[64] PUSH2 0x004d
+[65] SWAP2
+[66] SWAP1
+[67] PUSH2 0x009b
+[68] JUMP
+[69] JUMPDEST
+[70] PUSH1 0x40
+[71] MLOAD
+[72] DUP1
+[73] SWAP2
+[74] SUB
+[75] SWAP1
+[76] RETURN
+[77] JUMPDEST
+[78] PUSH2 0x0070
+[79] PUSH1 0x04
+[80] DUP1
+[81] CALLDATASIZE
+[82] SUB
+[83] DUP2
+[84] ADD
+[85] SWAP1
+[86] PUSH2 0x006b
+[87] SWAP2
+[88] SWAP1
+[89] PUSH2 0x00e2
+[90] JUMP
+[91] JUMPDEST
+[92] PUSH2 0x007a
+[93] JUMP
+[94] JUMPDEST
+[95] STOP
+[96] JUMPDEST
+[97] PUSH0 0x
+[98] DUP1
+[99] SLOAD
+[100] SWAP1
+[101] POP
+[102] SWAP1
+[103] JUMP
+[104] JUMPDEST
+[105] DUP1
+[106] PUSH0 0x
+[107] DUP2
+[108] SWAP1
+[109] SSTORE
+[110] POP
+[111] POP
+[112] JUMP
+[113] JUMPDEST
+[114] PUSH0 0x
+[115] DUP2
+[116] SWAP1
+[117] POP
+[118] SWAP2
+[119] SWAP1
+[120] POP
+[121] JUMP
+[122] JUMPDEST
+[123] PUSH2 0x0095
+[124] DUP2
+[125] PUSH2 0x0083
+[126] JUMP
+[127] JUMPDEST
+[128] DUP3
+[129] MSTORE
+[130] POP
+[131] POP
+[132] JUMP
+[133] JUMPDEST
+[134] PUSH0 0x
+[135] PUSH1 0x20
+[136] DUP3
+[137] ADD
+[138] SWAP1
+[139] POP
+[140] PUSH2 0x00ae
+[141] PUSH0 0x
+[142] DUP4
+[143] ADD
+[144] DUP5
+[145] PUSH2 0x008c
+[146] JUMP
+[147] JUMPDEST
+[148] SWAP3
+[149] SWAP2
+[150] POP
+[151] POP
+[152] JUMP
+[153] JUMPDEST
+[154] PUSH0 0x
+[155] DUP1
+[156] REVERT
+[157] JUMPDEST
+[158] PUSH2 0x00c1
+[159] DUP2
+[160] PUSH2 0x0083
+[161] JUMP
+[162] JUMPDEST
+[163] DUP2
+[164] EQ
+[165] PUSH2 0x00cb
+[166] JUMPI
+[167] PUSH0 0x
+[168] DUP1
+[169] REVERT
+[170] JUMPDEST
+[171] POP
+[172] JUMP
+[173] JUMPDEST
+[174] PUSH0 0x
+[175] DUP2
+[176] CALLDATALOAD
+[177] SWAP1
+[178] POP
+[179] PUSH2 0x00dc
+[180] DUP2
+[181] PUSH2 0x00b8
+[182] JUMP
+[183] JUMPDEST
+[184] SWAP3
+[185] SWAP2
+[186] POP
+[187] POP
+[188] JUMP
+[189] JUMPDEST
+[190] PUSH0 0x
+[191] PUSH1 0x20
+[192] DUP3
+[193] DUP5
+[194] SUB
+[195] SLT
+[196] ISZERO
+[197] PUSH2 0x00f7
+[198] JUMPI
+[199] PUSH2 0x00f6
+[200] PUSH2 0x00b4
+[201] JUMP
+[202] JUMPDEST
+[203] JUMPDEST
+[204] PUSH0 0x
+[205] PUSH2 0x0104
+[206] DUP5
+[207] DUP3
+[208] DUP6
+[209] ADD
+[210] PUSH2 0x00ce
+[211] JUMP
+[212] JUMPDEST
+[213] SWAP2
+[214] POP
+[215] POP
+[216] SWAP3
+[217] SWAP2
+[218] POP
+[219] POP
+[220] JUMP
+[221] 'fe'(Unknown Opcode)
+[222] LOG2
+[223] PUSH5 0x6970667358
+[224] '22'(Unknown Opcode)
+[225] SLT
+[226] SHA3
+[227] SWAP11
+[228] '0d'(Unknown Opcode)
+[229] 'd3'(Unknown Opcode)
+[230] MSTORE8
+[231] CALLDATASIZE
+[232] 'af'(Unknown Opcode)
+[233] CALL
+[234] 'eb'(Unknown Opcode)
+[235] RETURNDATACOPY
+[236] 'eb'(Unknown Opcode)
+[237] GT
+[238] 'db'(Unknown Opcode)
+[239] PUSH23 0xaa60a1427a12c1b92f945ea8c8d1dfa337cf2264736f6c
+[240] PUSH4 0x4300081a
+[241] STOP
+[242] CALLER
+_________________________________________________________
+some importent point to note
+contract bytecode is public in redable form 
+contract does not have to public 
+bytecoode is immutable
+ABI act as bridge between application  and smart contract
+ABI and bytecode cannot be genrated without source code
+
+abi aur byte code se smart contract nhi bnaya ja sakta
+lekin smart contract se ani aur byte code  bnaya ja sakta hai 
+
+
