@@ -1,4 +1,4 @@
-_____________________________LECTURE_1_________________________________
+_____________________________LECTURE_1_______COURSE OVERVIEW__________________________
 
 soladity on remix ide
 
@@ -6,3 +6,8 @@ course overview
 
 IDE------>COMPILATION PROCESS--->CONTRACT DEPLOYEMENT---->SOLADITY--
 ->VARIABLE-->FUNCTION--->DATA TYPES-->STORAGE-->CONTRACT BALANCE-->ACCESS MODIFIERS
+
+_____________________________LECTURE_2_____PRER  EQUISITES_______________________________
+BLOCKCHAIN
+ETHEREUM
+ANY PROG LANG
