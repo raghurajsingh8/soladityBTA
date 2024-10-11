@@ -1,0 +1,8 @@
+_____________________________LECTURE_1_________________________________
+
+soladity on remix ide
+
+course overview
+
+IDE------>COMPILATION PROCESS--->CONTRACT DEPLOYEMENT---->SOLADITY--
+->VARIABLE-->FUNCTION--->DATA TYPES-->STORAGE-->CONTRACT BALANCE-->ACCESS MODIFIERS
