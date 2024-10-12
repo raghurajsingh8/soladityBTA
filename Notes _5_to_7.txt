@@ -1,0 +1,15 @@
+________________________________________lecture_5_________________________________________Mainnet vs testnet
+
+mainnet actual ether pr kaam ho rha
+testnet fake ether ka use smart contract ko test krne ke l iye 
+
+mainnet used for actual transactions with value and test net used for testing smart contractsand decentralized apps
+
+mainnet network id is 1 and testnets network id is 3 4  and 42 
+
+mainnet example ethereum testnet example rinkeby test nest netwprk
+
+
+meaning of ID 
+newnode is part of mainnet then id is 1 if new node repsten id is 3
+
