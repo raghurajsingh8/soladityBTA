@@ -1,4 +1,4 @@
-________________________________________lecture_5_________________________________________Mainnet vs testnet
+________________________________________lecture_5_______________Mainnet vs testnet______
 
 mainnet actual ether pr kaam ho rha
 testnet fake ether ka use smart contract ko test krne ke l iye 
@@ -12,4 +12,18 @@ mainnet example ethereum testnet example rinkeby test nest netwprk
 
 meaning of ID 
 newnode is part of mainnet then id is 1 if new node repsten id is 3
+__________________________lecture_6_metamask_installation___________________________________
+Metamask installation
 
+metamask used for  
+store ether
+send ether 
+receive ether 
+run dapps 
+swap tokens
+
+official website https://metamask.io/
+this is extension add it into chrome
+
+code for authentication
+thing crash cement anxiety grow divert swarm alarm orange floor opinion net
