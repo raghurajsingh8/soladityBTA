@@ -27,3 +27,12 @@ this is extension add it into chrome
 
 code for authentication
 thing crash cement anxiety grow divert swarm alarm orange floor opinion net
+
+
+______________________lecture__7__Rinkeby_faucet________________________________
+testnet faucets
+ETH on testnet has no real values therefore we get testnet ETH form faucets EXample rinkebyfaucet ,Ropsten Faucet etc
+
+link https://rinkebyfaucet.io/
+
+need tweet account
