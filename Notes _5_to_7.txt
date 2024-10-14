@@ -36,3 +36,52 @@ ETH on testnet has no real values therefore we get testnet ETH form faucets EXam
 link https://rinkebyfaucet.io/
 
 need tweet account
+
+__________________lecture 8 contract deployement____________________________________
+javascript virtual machine 
+
+transaction will be executed in a sandbox
+own memory blockchain
+ideal for testing 
+
+injected web3 
+
+deploy a contract or run a transaction on etherium main or test net
+
+
+
+web3 provider 
+connect to a remote node and ethereum client.
+
+
+________________________lecture 9 soladity progeamming language________________
+
+remix IDE
+Testnet
+Contract Deployement 
+Compilation Process 
+Metamask
+Mainnet
+Rinkeby Faucet
+
+
+itna padhne ke baad ab padhenge soladity language 
+
+-->high level statically typed programming language
+
+yani btana padega ki kaunsa data type use kr rhe hai like c c++ js ki int char string kya use kr rhe hai 
+
+-->with soladity you can create contracts for uses such as voting ,crowdfunding ,blind auctions and multi-signature wallets
+
+-->case sensitive 
+
+--->for latest update visit soladity foundation 
+-->smaaart contract banane ke liye testing ka dhyaan de
+
+
+_--------------------first program lecture 10 -------------------------------------
+
+
+
+
+
